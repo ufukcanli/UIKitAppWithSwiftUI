@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-KY-f2L">
-                                <rect key="frame" x="103" y="414" width="208" height="68"/>
+                                <rect key="frame" x="103" y="374" width="208" height="148"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-Wx-Gvi" userLabel="Open SwiftUI View with Segue">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
@@ -33,6 +33,18 @@
                                             <action selector="openSwiftUIViewWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfT-g5-hng"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHs-67-cbQ">
+                                        <rect key="frame" x="0.0" y="76" width="208" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0Z-2h-h5N">
+                                        <rect key="frame" x="0.0" y="118" width="208" height="30"/>
+                                        <state key="normal" title="Pass Data in SwiftUI View"/>
+                                        <connections>
+                                            <segue destination="FvV-Pl-T3i" kind="show" identifier="toShowDataView" id="Aru-Pg-vqj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -44,10 +56,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UIViewController" id="gIW-aJ-zsx"/>
+                    <connections>
+                        <outlet property="dataTextField" destination="fHs-67-cbQ" id="zEo-dd-XvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="69.642857142857139"/>
+        </scene>
+        <!--Show Data View Hosting Controller-->
+        <scene sceneID="uhe-2S-1Er">
+            <objects>
+                <hostingController id="FvV-Pl-T3i" customClass="ShowDataViewHostingController" customModule="UIKitAppWithSwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RQA-4u-LMt"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKC-sr-wJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="798"/>
         </scene>
         <!--SwiftUI View-->
         <scene sceneID="Y3g-AF-QgT">
@@ -57,7 +82,7 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gya-Jg-x6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939.1304347826087" y="69.642857142857139"/>
+            <point key="canvasLocation" x="1955" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hwq-vf-aBW">
