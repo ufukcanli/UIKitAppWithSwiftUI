@@ -13,6 +13,7 @@
 		D279FF162559AA070072736C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D279FF142559AA070072736C /* Main.storyboard */; };
 		D279FF182559AA0D0072736C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D279FF172559AA0D0072736C /* Assets.xcassets */; };
 		D279FF1B2559AA0D0072736C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D279FF192559AA0D0072736C /* LaunchScreen.storyboard */; };
+		D279FF252559AA590072736C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D279FF242559AA590072736C /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D279FF172559AA0D0072736C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D279FF1A2559AA0D0072736C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D279FF1C2559AA0D0072736C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D279FF242559AA590072736C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D279FF0D2559AA070072736C /* UIKitAppWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D279FF232559AA300072736C /* SwiftUI Views */,
 				D279FF0E2559AA070072736C /* AppDelegate.swift */,
 				D279FF102559AA070072736C /* SceneDelegate.swift */,
 				D279FF122559AA070072736C /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				D279FF1C2559AA0D0072736C /* Info.plist */,
 			);
 			path = UIKitAppWithSwiftUI;
+			sourceTree = "<group>";
+		};
+		D279FF232559AA300072736C /* SwiftUI Views */ = {
+			isa = PBXGroup;
+			children = (
+				D279FF242559AA590072736C /* SettingsView.swift */,
+			);
+			path = "SwiftUI Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				D279FF132559AA070072736C /* ViewController.swift in Sources */,
 				D279FF0F2559AA070072736C /* AppDelegate.swift in Sources */,
+				D279FF252559AA590072736C /* SettingsView.swift in Sources */,
 				D279FF112559AA070072736C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
