@@ -16,19 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-Wx-Gvi" userLabel="Open SwiftUI View with Segue">
-                                <rect key="frame" x="103" y="433" width="208" height="30"/>
-                                <state key="normal" title="Open SwiftUI View with Segue"/>
-                                <connections>
-                                    <segue destination="Hy2-GK-P4H" kind="show" id="PUk-jb-zRF"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-KY-f2L">
+                                <rect key="frame" x="103" y="414" width="208" height="68"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-Wx-Gvi" userLabel="Open SwiftUI View with Segue">
+                                        <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
+                                        <state key="normal" title="Open SwiftUI View with Segue"/>
+                                        <connections>
+                                            <segue destination="Hy2-GK-P4H" kind="show" id="PUk-jb-zRF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3O-jg-kvG">
+                                        <rect key="frame" x="0.0" y="38" width="208" height="30"/>
+                                        <state key="normal" title="Open SwiftUI View with Code"/>
+                                        <connections>
+                                            <action selector="openSwiftUIViewWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfT-g5-hng"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AAS-Wx-Gvi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ypq-C6-bmc"/>
-                            <constraint firstItem="AAS-Wx-Gvi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kaS-f2-rUY"/>
+                            <constraint firstItem="zTx-KY-f2L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1h2-po-ff6"/>
+                            <constraint firstItem="zTx-KY-f2L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPb-xP-oei"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UIViewController" id="gIW-aJ-zsx"/>

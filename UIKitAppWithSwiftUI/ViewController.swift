@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func openSwiftUIViewWithCode(_ sender: UIButton) {
+        let profileView = UIHostingController(rootView: ProfileView())
+        navigationController?.pushViewController(profileView, animated: true)
+    }
+    
 }
 
