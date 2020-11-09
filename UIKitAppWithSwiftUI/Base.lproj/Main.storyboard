@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-KY-f2L">
-                                <rect key="frame" x="103" y="374" width="208" height="148"/>
+                                <rect key="frame" x="103" y="355" width="208" height="186"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-Wx-Gvi" userLabel="Open SwiftUI View with Segue">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
@@ -40,9 +40,16 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0Z-2h-h5N">
                                         <rect key="frame" x="0.0" y="118" width="208" height="30"/>
-                                        <state key="normal" title="Pass Data in SwiftUI View"/>
+                                        <state key="normal" title="Pass Data to SwiftUI View"/>
                                         <connections>
                                             <segue destination="FvV-Pl-T3i" kind="show" identifier="toShowDataView" id="Aru-Pg-vqj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wM3-Hh-8lY">
+                                        <rect key="frame" x="0.0" y="156" width="208" height="30"/>
+                                        <state key="normal" title="Pass Data with Code"/>
+                                        <connections>
+                                            <action selector="passDataWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72J-jy-S1i"/>
                                         </connections>
                                     </button>
                                 </subviews>

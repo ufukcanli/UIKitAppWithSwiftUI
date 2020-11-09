@@ -16,6 +16,7 @@ struct ShowDataView: View {
             Text(dataTextField?.text ?? "No data passed in")
                 .fontWeight(.bold)
         }
+        .navigationTitle("Show Data View")
     }
 }
 
