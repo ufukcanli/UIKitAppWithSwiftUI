@@ -11,6 +11,7 @@ import SwiftUI
 class ViewController: UIViewController {
 
     @IBOutlet weak var dataTextField: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,5 +35,15 @@ class ViewController: UIViewController {
         let dataView = UIHostingController(rootView: view)
         navigationController?.pushViewController(dataView, animated: true)
     }
+    
+    @IBAction func enterNameButton(_ sender: UIButton) {
+        let view = SendDataBackToUIViewController { [weak self] name in
+            guard let self = self else { return }
+            self.nameLabel.text = name
+        }
+        let nameView = UIHostingController(rootView: view)
+        navigationController?.pushViewController(nameView, animated: true)
+    }
+    
 }
 

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zTx-KY-f2L">
-                                <rect key="frame" x="103" y="355" width="208" height="186"/>
+                                <rect key="frame" x="103" y="322" width="208" height="252.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAS-Wx-Gvi" userLabel="Open SwiftUI View with Segue">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="30"/>
@@ -52,6 +52,19 @@
                                             <action selector="passDataWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72J-jy-S1i"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-EO-mPd">
+                                        <rect key="frame" x="0.0" y="194" width="208" height="30"/>
+                                        <state key="normal" title="Enter Name"/>
+                                        <connections>
+                                            <action selector="enterNameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UsM-Xe-KNV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MZ-gP-b3U">
+                                        <rect key="frame" x="0.0" y="232" width="208" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -65,6 +78,7 @@
                     <navigationItem key="navigationItem" title="UIViewController" id="gIW-aJ-zsx"/>
                     <connections>
                         <outlet property="dataTextField" destination="fHs-67-cbQ" id="zEo-dd-XvN"/>
+                        <outlet property="nameLabel" destination="5MZ-gP-b3U" id="c4f-S6-gRy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
